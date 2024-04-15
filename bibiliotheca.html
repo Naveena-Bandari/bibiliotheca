@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>bibiliotheca</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Naveena Bandari">
+	<meta name="keywords" content="		">
+	<meta name="descrption" content="	">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<!--font-awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--BS CSS link-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-expand-lg bg-body-white">
+	<div class="container">
+    <a class="logo" href="#">
+        <img src="logo.png" title="bibiliotheca" alt="Logo" width="50" height="50">
+    </a>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Category
+          </a>
+          <ul class="dropdown-menu dropdown">
+            <li><a class="dropdown-item" href="#fiction">Fiction</a></li>
+            <li><a class="dropdown-item" href="#thriller">Thriller</a></li>
+            <li><a class="dropdown-item" href="#comic">Comic</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="search" type="search" placeholder="Search" style="padding-bottom: 5px; width: 100%;">
+        <i class="fa fa-search py-2" style="font-size:17px;  margin-left: -35px; color: #999999;"></i>
+      </form>
+	  
+      <i class="fa fa-shopping-cart"
+        style="font-size:35px; padding-left: 20px; padding-right: 10px; color: #555555;"></i>
+		
+	  <i class="fa fa-user"
+        style="font-size:35px; padding-left: 20px; padding-right: 10px; color: #555555;"></i>
+
+    </div>
+	</div>
+	</nav>
+	<!--carousel-->
+	
+	<div id="carousel" class="carousel slide" data-bs-ride="carousel" style="margin: 0px 20px 10px;">
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner1.jpg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner2.jpg" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner3.jpg" alt="...">
+    </div>
+	</div>
+	<div class="centered"><i>Let's Read!!</i></div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+	</button>
+	</div>
+	
+	<div class="container-fluid">
+	<h2>Recommended for you</h2>
+	</div>
+	<div class="container py-2">
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/fiction/2.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Pink House</h5>
+			<small>by <span style="color:red">Cindy Kirk</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/2.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>No Strangers Here</h5>
+			<small>by <span style="color:red">Carlene O'Connor</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/4.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>All by Myself</h5>
+			<small>by <span style="color:red">Mercer Meyar</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/7.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Friendship Club</h5>
+			<small>by <span style="color:red">Robin Carr</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container-fluid">
+	<h3 id="fiction">Fiction</h3>
+	</div>
+	<div class="container py-2">
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/fiction/1.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Land of Strife</h5>
+			<small>by <span style="color:red">S.Y. Lee</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/2.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Pink House</h5>
+			<small>by <span style="color:red">Cindy Kirk</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/3.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Edge</h5>
+			<small>by <span style="color:red">David Baldacci</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/4.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Academy Arcanist</h5>
+			<small>by <span style="color:red">Shami Stovall</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/fiction/5.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>On Mystic Lake</h5>
+			<small>by <span style="color:red">Kristin Hannah</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/6.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Summer Island</h5>
+			<small>by <span style="color:red">Kristin Hannah</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/7.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Friendship Club</h5>
+			<small>by <span style="color:red">Robin Carr</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/fiction/8.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Girl Who Survived</h5>
+			<small>by <span style="color:red">Lisa Jackson</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container-fluid">
+	<h3 id="thriller">Thriller</h3>
+	</div>
+	<div class="container py-2">
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/thriller/1.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Simon says.. Hide</h5>
+			<small>by <span style="color:red">Dale Mayer</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/2.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>No Strangers Here</h5>
+			<small>by <span style="color:red">Carlene O'Connor</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/3.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Dark Matter</h5>
+			<small>by <span style="color:red">Blake Crouch</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/4.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Burden of Truth</h5>
+			<small>by <span style="color:red">Robin James</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/thriller/5.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>I Am Watching You</h5>
+			<small>by <span style="color:red">Teresa Driscoll</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/6.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Perfect Marriage</h5>
+			<small>by <span style="color:red">Jeneva Roser</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/7.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Ward D</h5>
+			<small>by <span style="color:red">Freida McFadden</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/thriller/8.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Girl Who Survived</h5>
+			<small>by <span style="color:red">Lisa Jackson</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container-fluid">
+	<h3 id="comic">Comic</h3>
+	</div>
+	<div class="container py-2">
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/comic/1.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Batman</h5>
+			<small>by <span style="color:red">Alan Burnett and Paul Dini</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/2.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Spiderman</h5>
+			<small>by <span style="colorred">Titan</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/3.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Garfield</h5>
+			<small>by <span style="color:red">Jim Devis</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/4.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>All By Myself</h5>
+			<small>by <span style="color:red">Mercer Meyar</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row py-4">
+		<div class="row">
+		  <div class="col-lg-3">
+			<img src="books/comic/5.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Are You My Mother?</h5>
+			<small>by <span style="color:red">P.D.Eastman</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+  		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/6.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Little Witch</h5>
+			<small>by <span style="color:red">Anna Elizabeth Bennett</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/7.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>The Rainbow Fish</h5>
+			<small>by <span style="color:red">Marcus Pfister</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		  <div class="col-lg-3">
+			<img src="books/comic/8.png" class="img-fluid mb-6" title="The Edge" alt="The Edge">
+			<h5>Love from Bluey</h5>
+			<small>by <span style="color:red">Bluey</span></small><br>
+			<a href="#" class="btn btn-outline-primary" style="margin-right:5px; padding:2px 5px; margin-top:3px;">Add to cart</a>
+			<a href="#" class="btn btn-outline-primary" style="margin-left:25px; padding:2px 5px; margin-top:3px;" data-toggle="modal" data-target="#buy">buy</a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!--modal for buy-->
+	<div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" id="place1">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Please fill the details!</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3" autocomplete="off" name="hello-sheet">
+            <div class="col-md-4">
+              <label for="name" class="form-label">Your name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name" required name="name">
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Enter email" name="email">
+              <div class="invalid-feedback">
+                Please provide a valid Email Address
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Enter address" required minlength="20" name="address">
+              <div class="invalid-feedback">
+                Address should be atleast 20 characters
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="quantity" class="form-label">Quantity</label>
+              <select class="form-select" id="quantity" required name="quantity">
+			  <option selected disabled value="">Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+				<option>4</option>
+				<option>5</option>
+			  </select>
+              <div class="invalid-feedback">
+                Please select a valid Quantity!
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="pin" class="form-label">Pin code</label>
+              <input type="" class="form-control" id="pin" required pattern="[0-9]{3}-[0-9]{3}" placeholder="123-456" maxlength="7"
+                name="pin">
+              <div class="invalid-feedback">
+                Please match the requested format!.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                <label class="form-check-label" for="checkbox">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button id="btnp" class="btn btn-primary" type="submit" name="submit" onclick="sub()">Place Order</button>
+            </div>
+          </form>
+        </div>    
+      </div>
+    </div>
+	</div>
+
+	<!--footer-->
+	<footer>
+	<div class="container-fluid" style="background-color:#555555; box-shadow: 0 0 5px gray; color:white;">      
+      <div style="padding:30px 0 20px; font-family:Papyrus;">
+		<span><h1 style="text-align:center; font-weight:900;">bibiliotheca</h1></span>
+      </div>
+	  <p style="text-align:center; font-family:verdana; font-weight:400;">Reach Us</p>
+	  <div class="container-fluid" style="padding-left:35%;">
+		<img width="130px" height="40px" src="google play.png" style="margin: 0px 10px; margin-left: 60px;" />
+        <img width="130px" height="40px" src="app store.png" style="margin: 0px; border: 1px solid white;" />
+	  </div>
+      <br>
+	  <p style="text-align:center; font-family:verdana; font-weight:400;">Follow Us</p>	  
+      <div class="container-fluid" style="padding-left:42%;">
+          <img width="35px" height="25px" src="facebook.png" style="border: 1px solid white;">
+          <img width="40px" height="25px" src="instagram.png" style="margin-left: 10px; border: 1px solid white;">
+          <img width="40px" height="25px" src="twitter.png" style="margin-left: 10px; border: 1px solid white;">
+		  <img width="42px" height="25px" src="youtube.png" style="margin-left: 10px; border: 1px solid white;">  
+      </div>	
+		<p><pre style="text-align:center;">Terms of Use   |   FAQ    |   Privacy Policy</pre></p>	  
+		<p style="text-align:right;"><sup>©</sup>Copyright 2021 bibiliotheca. All Rights Reserved.</p>	  
+	</div>
+	</footer>
+	
+	
+	
+
+	
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+

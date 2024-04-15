@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.logo{
+	margin-right:20px;
+}
+	
+.nav-item{
+	font-size: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 750;
+}
+
+.search{
+	height: 35px;
+	width: 80%;
+	border-radius: 60px;
+	outline: none;
+	border: 2px solid #555555;
+	padding-left: 15px;
+}
+
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	text-shadow: 3px 3px 20px black, 0 0 50px darkblue;
+	text-align: center;
+	font-family: roboto;
+	font-size: 8rem;
+	font-weight: 300;
+	transform: translate(-50%, -50%);
+}
+	
+.img-fluid{
+	box-shadow: 0 0 10px gray;
+}
